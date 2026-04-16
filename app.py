@@ -1,4 +1,3 @@
-%%writefile app.py
 import streamlit as st
 import joblib
 import pandas as pd
@@ -6,8 +5,8 @@ import pandas as pd
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 
-xgb_model = joblib.load("xgb_pipeline.pkl")
-lgb_model = joblib.load("lgb_pipeline.pkl")
+xgb_model = joblib.load("xgb_model.pkl")
+lgb_model = joblib.load("lgb_model.pkl")
 
 st.title("🎓 Student Placement Predictor")
 
