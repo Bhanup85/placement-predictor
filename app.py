@@ -1,6 +1,8 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from lightgbm import LGBMClassifier
+from xgboost import XGBClassifier
 
 # Load models
 xgb_model = joblib.load("xgb_model.pkl")
